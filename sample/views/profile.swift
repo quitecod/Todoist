@@ -54,7 +54,7 @@ struct profile: View {
                                     Text("Logout")
                                         .foregroundColor(.white)
                                         .padding()
-                                        .background(Color.red)
+                                        .background(Color.blue)
                                         .cornerRadius(10)
                                 }
                                 .padding()
