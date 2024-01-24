@@ -68,7 +68,7 @@ struct LoginView: View {
                                         
                                         
                                         usercredentialvm.saveUserCredentials(username: usernametextfield, password: passwordtextfield)
-                                        createNewUser = true
+                                        createNewUser =  usercredentialvm.isValidEmail(email:usernametextfield)
                                         
                                     
                                         
@@ -89,7 +89,7 @@ struct LoginView: View {
                                     .background(Color.blue)
                                     .cornerRadius(10)
                                     .onTapGesture {
-                                        validateUser = usercredentialvm.validateUserCredentials(username: usernametextfield, password: passwordtextfield)
+                                        validateUser = usercredentialvm.validateUserCredentials(username: usernametextfield, password: passwordtextfield) && usercredentialvm.isValidEmail(email:usernametextfield)
 // matching data from core data using method created in usercredentialvm                                 }
                                     }
                             }
