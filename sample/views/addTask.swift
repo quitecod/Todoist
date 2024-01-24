@@ -11,6 +11,7 @@ struct addTask: View {
     
     
     @StateObject var vm = CoreDataViewModel()
+    @State private var showAlert = false
     @State var text:String = ""
     @State var desc:String = ""
     @State var selectedDate:Date = Date()
@@ -42,6 +43,7 @@ struct addTask: View {
                             guard !text.isEmpty, !desc.isEmpty else{return}
                             
                             vm.addTasks(text: text,desc:desc,date:selectedDate)
+                            showAlert=true
                             text=""
                             desc=""
                             
@@ -54,6 +56,11 @@ struct addTask: View {
                                 .background(Color.black)
                                 .cornerRadius(10)
                         })
+                        .alert(isPresented: $showAlert) {
+                            Alert(
+                                title: Text("Alert ").foregroundStyle(Color.red),
+                                message: Text("Record Saved")
+                               )}
                         .padding()
                         Image("img")
                             .frame(width:350)
