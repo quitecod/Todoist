@@ -46,7 +46,8 @@ struct profile: View {
                 }
                 .padding()
                 Spacer()
-
+                
+                
                 Button(action: {
                                     // Handle logout action here
                                      // Update authentication state

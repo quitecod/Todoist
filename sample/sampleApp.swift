@@ -11,7 +11,8 @@ import SwiftUI
 struct sampleApp: App {
     var body: some Scene {
         WindowGroup {
-            tabView()
+            
+                LoginView(nowOnSignUpPage: false, title: "Log In", buttonText: "Login")
         }
     }
 }

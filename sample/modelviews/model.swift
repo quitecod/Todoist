@@ -61,6 +61,7 @@ class CoreDataViewModel:ObservableObject{
         }
         
     }
+    
     func formatDate(date: Date, format: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format

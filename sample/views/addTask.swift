@@ -22,7 +22,14 @@ struct addTask: View {
                 
                 VStack(){
                     
+                   Text("Add New Task")
+                            .bold()
+                            .foregroundColor(.gray)
+                            .font(.title)
+                            .padding(.top, 20)
+                    
                     Form{
+                        
                         Section("Tasks"){
                             TextField("Task Name", text: $text)
                                 .font(.headline)
@@ -38,6 +45,7 @@ struct addTask: View {
                                 .datePickerStyle(.compact)
                                 .padding(.horizontal)
                         }
+                        
                         Button(action: {
                             guard !text.isEmpty, !desc.isEmpty else{return}
                             
@@ -60,7 +68,6 @@ struct addTask: View {
                         
                         
                     }
-                    
                     Spacer()
                     
                     

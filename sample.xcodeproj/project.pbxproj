@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8EC7D7502B606F2E003D8D53 /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7D74E2B606F2E003D8D53 /* User.xcdatamodeld */; };
+		8EC7D7562B607AF9003D8D53 /* LoginSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7D7552B607AF9003D8D53 /* LoginSignUpView.swift */; };
+		8EC7D7582B6080CF003D8D53 /* UserCredentialsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7D7572B6080CF003D8D53 /* UserCredentialsVM.swift */; };
 		96DF2EF62B5E109800DBFA4E /* sampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DF2EF52B5E109800DBFA4E /* sampleApp.swift */; };
 		96DF2EFA2B5E109A00DBFA4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96DF2EF92B5E109A00DBFA4E /* Assets.xcassets */; };
 		96DF2EFD2B5E109A00DBFA4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96DF2EFC2B5E109A00DBFA4E /* Preview Assets.xcassets */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8EC7D74F2B606F2E003D8D53 /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
+		8EC7D7552B607AF9003D8D53 /* LoginSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpView.swift; sourceTree = "<group>"; };
+		8EC7D7572B6080CF003D8D53 /* UserCredentialsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentialsVM.swift; sourceTree = "<group>"; };
 		96DF2EF22B5E109800DBFA4E /* sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96DF2EF52B5E109800DBFA4E /* sampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleApp.swift; sourceTree = "<group>"; };
 		96DF2EF92B5E109A00DBFA4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +80,7 @@
 				96DF2F032B5E133600DBFA4E /* views */,
 				96DF2EF92B5E109A00DBFA4E /* Assets.xcassets */,
 				96DF2F1C2B5E2FDB00DBFA4E /* Task.xcdatamodeld */,
+				8EC7D74E2B606F2E003D8D53 /* User.xcdatamodeld */,
 				96DF2EFB2B5E109A00DBFA4E /* Preview Content */,
 			);
 			path = sample;
@@ -90,6 +97,7 @@
 		96DF2F032B5E133600DBFA4E /* views */ = {
 			isa = PBXGroup;
 			children = (
+				8EC7D7552B607AF9003D8D53 /* LoginSignUpView.swift */,
 				96DF2F122B5E1AB600DBFA4E /* addTask.swift */,
 				96DF2F142B5E2C1D00DBFA4E /* profile.swift */,
 				96DF2F162B5E2EFB00DBFA4E /* displayTasks.swift */,
@@ -106,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				96DF2F1A2B5E2F7A00DBFA4E /* model.swift */,
+				8EC7D7572B6080CF003D8D53 /* UserCredentialsVM.swift */,
 			);
 			path = modelviews;
 			sourceTree = "<group>";
@@ -180,12 +189,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC7D7502B606F2E003D8D53 /* User.xcdatamodeld in Sources */,
 				96DF2F242B5E372700DBFA4E /* news.swift in Sources */,
 				96DF2F222B5E365C00DBFA4E /* tabView.swift in Sources */,
 				96DF2F202B5E341500DBFA4E /* backButton.swift in Sources */,
 				96DF2F1E2B5E2FDB00DBFA4E /* Task.xcdatamodeld in Sources */,
 				96DF2F192B5E2F0C00DBFA4E /* eachRow.swift in Sources */,
 				96DF2F1B2B5E2F7A00DBFA4E /* model.swift in Sources */,
+				8EC7D7562B607AF9003D8D53 /* LoginSignUpView.swift in Sources */,
+				8EC7D7582B6080CF003D8D53 /* UserCredentialsVM.swift in Sources */,
 				96DF2F282B5E625C00DBFA4E /* dueDate.swift in Sources */,
 				96DF2F152B5E2C1D00DBFA4E /* profile.swift in Sources */,
 				96DF2F172B5E2EFB00DBFA4E /* displayTasks.swift in Sources */,
@@ -396,6 +408,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		8EC7D74E2B606F2E003D8D53 /* User.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8EC7D74F2B606F2E003D8D53 /* User.xcdatamodel */,
+			);
+			currentVersion = 8EC7D74F2B606F2E003D8D53 /* User.xcdatamodel */;
+			path = User.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		96DF2F1C2B5E2FDB00DBFA4E /* Task.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
